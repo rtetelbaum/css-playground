@@ -1,5 +1,6 @@
 // DOM ELEMENTS
 
+const body = document.querySelector("body")
 const divOne = document.querySelector("#divOne")
 const divTwo = document.querySelector("#divTwo")
 const divThree = document.querySelector("#divThree")
@@ -7,7 +8,7 @@ const btnDiv = document.querySelector("#btnDiv")
 
 // EVENT HANDLERS
 
-btnDiv.addEventListener("click", ({ target }) => {
+body.addEventListener("click", ({ target }) => {
 	if (target.matches("#btnOne")) {
 		[divTwo, divThree].forEach(div => div.classList.add("invisible"))
 		divOne.classList.remove("invisible")
